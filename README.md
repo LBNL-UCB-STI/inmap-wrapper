@@ -40,7 +40,7 @@ Data code run trials [are located here](https://docs.google.com/spreadsheets/d/1
 Pull image
 
 ```
-docker pull haitamlaarabi/inmap:latest
+docker pull haitamlaarabi/inmap:1.0
 ```
 
 
@@ -51,7 +51,7 @@ docker run --rm \
   -v <path to evaldata>:/evaldata \
   -e evaldata=/evaldata \
   -w /evaldata \
-  haitamlaarabi/inmap:latest \
+  haitamlaarabi/inmap:1.0 \
   run steady --config=/evaldata/<path to the config.toml>
 ```
 
@@ -79,7 +79,7 @@ docker run --rm \
 	-v $(realpath evaldata_v1.6.1):/evaldata \
 	-e evaldata=/evaldata \
 	-w /evaldata \
-	haitamlaarabi/inmap:latest \
+	haitamlaarabi/inmap:1.0 \
 	run steady --config=/evaldata/nei2005Config.toml
 ```
 
